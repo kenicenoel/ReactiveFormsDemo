@@ -1,0 +1,29 @@
+<section id="header">
+  <img src="../../assets/imgs/icons/blog.svg" alt="blob">
+</section>
+
+<section id="content">
+  <h3 class="header">Basic Form</h3>
+  <form [formGroup]="basicForm">
+      <p class="preview">
+        Value: {{ basicForm.value | json }}
+      </p>
+      <hr>
+
+      <mat-form-field>
+        <input matInput placeholder="email" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field>
+          <textarea matInput formControlName="message"></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+            <mat-select formControlName="career" placeholder="Choose Career">
+                <mat-option value="option">Police</mat-option>
+                <mat-option value="option">Doctor</mat-option>
+
+            </mat-select>
+      </mat-form-field>
+  </form>
+</section>
