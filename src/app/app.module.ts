@@ -23,7 +23,7 @@ import { MatChipsModule } from '@angular/material/chips';
     NestedFormComponent,
     ArrayFormComponent,
     ValidFormComponent,
-    SubmitFormComponent,
+    SubmitFormComponent
     
   ],
   imports: [

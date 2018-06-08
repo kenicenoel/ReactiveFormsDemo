@@ -9,7 +9,6 @@
         Value: {{ basicForm.value | json }}
       </p>
       <hr>
-
       <mat-form-field>
         <input matInput placeholder="email" formControlName="email">
       </mat-form-field>
@@ -22,8 +21,8 @@
             <mat-select formControlName="career" placeholder="Choose Career">
                 <mat-option value="option">Police</mat-option>
                 <mat-option value="option">Doctor</mat-option>
-
             </mat-select>
       </mat-form-field>
+       <button mat-raised-button color="primary">Submit</button>
   </form>
 </section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'nested-form',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NestedFormComponent implements OnInit {
 
-  constructor() { }
+ 
+  nestedForm: FormGroup;
+  constructor(private formBuilder: FormBuilder) { }
 
-  ngOnInit() {
+  ngOnInit() 
+  {
+    const phone = this.formBuilder.group({
+      area: [],
+      prefix: [],
+      number: []
+    })
+    
+    this.nestedForm = this.formBuilder.group(
+      {
+        email: '',
+        homePhone: phone,
+        cellPhone: phone
+      }
+    )
+
+    this.nestedForm.valueChanges.subscribe(console.log)
   }
-
 }

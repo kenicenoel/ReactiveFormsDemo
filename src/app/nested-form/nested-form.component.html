@@ -1,3 +1,42 @@
-<p>
-  nested-form works!
-</p>
+<section id="header">
+  <img src="../../assets/imgs/icons/blog.svg" alt="blob">
+</section>
+
+  <h3 class="header">Nested Form</h3>
+  <form [formGroup] ="nestedForm">
+      <p class="preview">
+        Value: {{ nestedForm.value | json }}
+      </p>
+      <hr>
+      <mat-form-field class="full">
+        <input matInput placeholder="email" formControlName="email">
+      </mat-form-field>
+
+      <div class="subgroup center" formGroupName="cellPhone">
+          <h4 class="header">Cell Phone</h4>
+          <mat-form-field class="inline">
+              <input matInput placeholder="area" formControlName="area">
+          </mat-form-field>
+          <mat-form-field class="inline">
+              <input matInput placeholder="prefix" formControlName="prefix">
+          </mat-form-field>
+          <mat-form-field class="inline">
+              <input matInput placeholder="number" formControlName="number">
+          </mat-form-field>
+      </div>
+
+      <div class="subgroup center" formGroupName="homePhone">
+          <h4 class="header">Home Phone</h4>
+          <mat-form-field class="inline">
+              <input matInput placeholder="area" formControlName="area">
+          </mat-form-field>
+          <mat-form-field class="inline">
+              <input matInput placeholder="prefix" formControlName="prefix">
+          </mat-form-field>
+          <mat-form-field class="inline">
+              <input matInput placeholder="number" formControlName="number">
+          </mat-form-field>
+      </div>
+ 
+       <button mat-raised-button color="accent" class="center">Save</button>
+  </form>
