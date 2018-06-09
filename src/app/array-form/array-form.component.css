@@ -1,0 +1,70 @@
+.block
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#header
+{
+    margin-top: 5%;
+    width: 100%;
+}
+
+#header img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3, h4
+{
+    font-family: 'Inter UI';
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+
+h4
+{
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+form
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    padding: 2%;
+}
+
+.preview
+{
+    text-align: center;
+    padding: 10px;
+}
+
+hr
+{
+    margin: 0px 10px 20px 10px;
+    border: 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.group
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.deleteButton
+{
+    background-color: #f00000;
+    margin-left: 10px;
+}
+
+mat-form-field
+{
+    margin: 0px 5px;
+}

@@ -1,3 +1,28 @@
-<p>
-  array-form works!
-</p>
+<section id="header">
+  <img src="../../assets/imgs/icons/blog.svg" alt="blob">
+</section>
+
+  <h3 class="header">Dymanic Form</h3>
+  <form [formGroup] ="arrayForm">
+      <hr>
+      <div formArrayName="phones">
+        <div *ngFor="let phone of phoneForms.controls; let i = index" [formGroupName]="i">
+          <mat-form-field class="inline">
+            <input matInput placeholder="area" formControlName="area">
+        </mat-form-field>
+        <mat-form-field class="inline">
+            <input matInput placeholder="prefix" formControlName="prefix">
+        </mat-form-field>
+        <mat-form-field class="inline">
+            <input matInput placeholder="number" formControlName="number">
+        </mat-form-field>
+          <button class="deleteButton" mat-raised-button color="primary" (click)="deletePhone(i)">Delete</button>
+        </div>
+
+      </div>
+      <button class="block" mat-raised-button color="priamry" (click)="addNewPhone()">Add a phone</button>
+
+     
+ 
+       <button class="block" mat-raised-button color="accent" class="center">Done</button>
+  </form>

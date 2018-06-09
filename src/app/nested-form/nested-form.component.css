@@ -46,6 +46,12 @@ hr
     border-top: 1px solid #f0f0f0;
 }
 
+.group
+{
+    display: block;
+    margin: 0 auto;
+}
+
 mat-form-field
 {
     display: block;

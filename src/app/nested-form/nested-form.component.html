@@ -14,28 +14,32 @@
 
       <div class="subgroup center" formGroupName="cellPhone">
           <h4 class="header">Cell Phone</h4>
-          <mat-form-field class="inline">
-              <input matInput placeholder="area" formControlName="area">
-          </mat-form-field>
-          <mat-form-field class="inline">
-              <input matInput placeholder="prefix" formControlName="prefix">
-          </mat-form-field>
-          <mat-form-field class="inline">
-              <input matInput placeholder="number" formControlName="number">
-          </mat-form-field>
+         <div class="group">
+              <mat-form-field class="inline">
+                  <input matInput placeholder="area" formControlName="area">
+              </mat-form-field>
+              <mat-form-field class="inline">
+                  <input matInput placeholder="prefix" formControlName="prefix">
+              </mat-form-field>
+              <mat-form-field class="inline">
+                  <input matInput placeholder="number" formControlName="number">
+              </mat-form-field>
+         </div>
       </div>
 
       <div class="subgroup center" formGroupName="homePhone">
           <h4 class="header">Home Phone</h4>
-          <mat-form-field class="inline">
-              <input matInput placeholder="area" formControlName="area">
-          </mat-form-field>
-          <mat-form-field class="inline">
-              <input matInput placeholder="prefix" formControlName="prefix">
-          </mat-form-field>
-          <mat-form-field class="inline">
-              <input matInput placeholder="number" formControlName="number">
-          </mat-form-field>
+          <div class="group">
+            <mat-form-field class="inline">
+                <input matInput placeholder="area" formControlName="area">
+            </mat-form-field>
+            <mat-form-field class="inline">
+                <input matInput placeholder="prefix" formControlName="prefix">
+            </mat-form-field>
+            <mat-form-field class="inline">
+                <input matInput placeholder="number" formControlName="number">
+            </mat-form-field>
+       </div>
       </div>
  
        <button mat-raised-button color="accent" class="center">Save</button>
